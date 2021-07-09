@@ -6,8 +6,13 @@
 
 import Foundation
 
+class DispatchQueueManager {
+    public static let concurrent = DispatchQueue(label: "Custom Dispatch Queue",
+                                                      attributes: .concurrent)
+}
+
 @propertyWrapper public class ThreadSafe<T>{
-    private let concurrentQueue = CustomDispatchQueue.concurrent
+    private let concurrentQueue = DispatchQueueManager.concurrent
     private var value: T
     public init(wrappedValue: T) {
         self.value = wrappedValue
