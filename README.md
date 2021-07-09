@@ -9,7 +9,7 @@ This repo handles that , be it any type just use this and the accesses to that i
 - Every application is given a limited number of threads and when you create multiple threads it will eventually lead to thread starvation and your application will enter a memory warning state.This is why i am using a shared concurrent queue.
 
 #### Why barrier on ConcurrentQueue and not on Global queue?
-- barriers do not work on global concurrent queues , it words only on custom concurrent queues
+- barriers do not work on global concurrent queues , it works only on custom concurrent queues
 
 #### Best Part? 
 It is generic , can be used over any type and is even backward compatible all the way even upto iOS 11 , give it a spin :)
