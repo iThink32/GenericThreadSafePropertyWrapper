@@ -11,6 +11,9 @@ This repo handles that , be it any type just use this and the accesses to that i
 #### Why barrier on ConcurrentQueue and not on Global queue?
 - barriers do not work on global concurrent queues , it words only on custom concurrent queues
 
+#### Best Part? 
+It is generic , can be used over any type and is even backward compatible all the way even upto iOS 11 , give it a spin :)
+
 #### Usage:
 
 Consider the following model without threadsafety 
@@ -57,6 +60,6 @@ public class BaseModel {
 }
 ```
 
-Thats it! , your model is now thread safe :)
+Thats it! , your model is now thread safe :).
 
 
