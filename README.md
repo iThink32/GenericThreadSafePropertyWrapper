@@ -60,6 +60,6 @@ public class BaseModel {
 }
 ```
 
-Thats it! , your model is now thread safe :).
+Thats it! , your model is now thread safe :)
 
 
