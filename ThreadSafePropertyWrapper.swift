@@ -7,7 +7,7 @@
 import Foundation
 
 @propertyWrapper public class ThreadSafe<T>{
-    private let concurrentQueue = PMDispatchQueue.concurrent
+    private let concurrentQueue = CustomDispatchQueue.concurrent
     private var value: T
     public init(wrappedValue: T) {
         self.value = wrappedValue
